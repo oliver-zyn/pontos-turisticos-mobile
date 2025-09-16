@@ -67,14 +67,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         } else {
             carregarPontosTuristicos()
         }
-
-        mMap.setOnMarkerClickListener { marker ->
-            val tag = marker.tag
-            if (tag is PontoTuristico) {
-                mostrarDetalhesPonto(tag)
-            }
-            true
-        }
     }
 
     private fun aplicarConfiguracoesMapa() {
@@ -110,23 +102,5 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             val brasil = LatLng(-14.2350, -51.9253)
             mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(brasil, 4f))
         }
-    }
-
-    private fun mostrarDetalhesPonto(ponto: PontoTuristico) {
-        val mensagem = """
-            Nome: ${ponto.nome}
-            
-            Descrição: ${ponto.descricao}
-            
-            Coordenadas: ${ponto.latitude}, ${ponto.longitude}
-            
-            ${if (!ponto.endereco.isNullOrEmpty()) "Endereço: ${ponto.endereco}" else ""}
-        """.trimIndent()
-
-        AlertDialog.Builder(this)
-            .setTitle("Detalhes do Ponto")
-            .setMessage(mensagem)
-            .setPositiveButton("OK", null)
-            .show()
     }
 }
