@@ -2,4 +2,13 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="fundobranco">#FFFFFFFF</color>
+    <color name="fundocinzaclaro">#FFF5F5F5</color>
+    <color name="fundocinza">#FF9E9E9E</color>
+    <color name="fundocinzaescuro">#FF424242</color>
+    <color name="fundopreto">#FF000000</color>
+    <color name="fundobege">#FFF5F5DC</color>
+    <color name="fundooffwhite">#FFFAFAFA</color>
+    <color name="fundogelo">#B2D8F6</color>
+    <color name="fundocarvao">#FF212121</color>
 </resources>

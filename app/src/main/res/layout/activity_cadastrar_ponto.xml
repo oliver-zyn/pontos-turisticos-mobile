@@ -79,7 +79,7 @@
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_gravity="center"
-            android:src="@drawable/ic_launcher_foreground"
+            android:src="@drawable/ic_launcher_foregr"
             android:scaleType="centerCrop"
             android:background="#E0E0E0"
             android:layout_marginBottom="8dp" />
