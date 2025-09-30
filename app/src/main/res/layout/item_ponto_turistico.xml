@@ -10,17 +10,17 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:orientation="vertical">
 
         <!-- Conteúdo principal -->
 
         <!-- Botões organizados horizontalmente -->
+
         <ImageView
             android:id="@+id/ivPontoImage"
-            android:layout_width="363dp"
-            android:layout_height="80dp"
-            android:layout_marginEnd="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="161dp"
+            android:adjustViewBounds="true"
             android:background="#E0E0E0"
             android:scaleType="centerCrop"
             android:src="@drawable/ic_launcher_foregr" />
@@ -29,7 +29,12 @@
             android:id="@+id/tvNome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="16dp"
             android:layout_marginBottom="4dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
             android:text="Nome do Ponto"
             android:textAlignment="center"
             android:textSize="16sp"
@@ -39,9 +44,13 @@
             android:id="@+id/tvDescricao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
             android:layout_marginBottom="4dp"
             android:ellipsize="end"
             android:maxLines="2"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
             android:text="Descrição do ponto turístico"
             android:textAlignment="center"
             android:textSize="14sp" />
@@ -50,6 +59,9 @@
             android:id="@+id/tvEndereco"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
             android:text="Endereço"
             android:textColor="#666666"
             android:textSize="12sp" />
@@ -64,7 +76,9 @@
                 android:id="@+id/btnVerMapa"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
                 android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
                 android:layout_weight="1"
                 android:backgroundTint="#4CAF50"
                 android:text="Ver Mapa"
@@ -76,6 +90,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="4dp"
+                android:layout_marginBottom="4dp"
                 android:layout_weight="1"
                 android:text="Editar"
                 android:textAllCaps="false"
@@ -86,6 +101,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="4dp"
                 android:layout_weight="1"
                 android:backgroundTint="#FF5722"
                 android:text="Excluir"
