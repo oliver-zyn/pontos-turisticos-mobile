@@ -4,113 +4,109 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
-    app:cardCornerRadius="8dp"
+    app:cardCornerRadius="25dp"
     app:cardElevation="4dp">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <!-- Conteúdo principal -->
-
-        <!-- Botões organizados horizontalmente -->
-
-        <ImageView
-            android:id="@+id/ivPontoImage"
-            android:layout_width="match_parent"
-            android:layout_height="161dp"
-            android:adjustViewBounds="true"
-            android:background="#E0E0E0"
-            android:scaleType="centerCrop"
-            android:src="@drawable/ic_launcher_foregr" />
-
-        <TextView
-            android:id="@+id/tvNome"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="4dp"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:text="Nome do Ponto"
-            android:textAlignment="center"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/tvDescricao"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="4dp"
-            android:ellipsize="end"
-            android:maxLines="2"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:text="Descrição do ponto turístico"
-            android:textAlignment="center"
-            android:textSize="14sp" />
-
-        <TextView
-            android:id="@+id/tvEndereco"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="8dp"
-            android:text="Endereço"
-            android:textColor="#666666"
-            android:textSize="12sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
-            <Button
-                android:id="@+id/btnVerMapa"
-                android:layout_width="0dp"
+            <ImageView
+                android:id="@+id/ivPontoImage"
+                android:layout_width="match_parent"
+                android:layout_height="161dp"
+                android:adjustViewBounds="true"
+                android:background="#E0E0E0"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_foregr" />
+
+            <TextView
+                android:id="@+id/tvNome"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="4dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="16dp"
                 android:layout_marginBottom="4dp"
-                android:layout_weight="1"
-                android:backgroundTint="#4CAF50"
-                android:text="Ver Mapa"
-                android:textAllCaps="false"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="Nome do Ponto"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDescricao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="4dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="Descrição do ponto turístico"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvEndereco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="Endereço"
+                android:textColor="#666666"
                 android:textSize="12sp" />
 
-            <Button
-                android:id="@+id/btnEditar"
-                android:layout_width="0dp"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="4dp"
-                android:layout_marginBottom="4dp"
-                android:layout_weight="1"
-                android:text="Editar"
-                android:textAllCaps="false"
-                android:textSize="12sp" />
+                android:gravity="center"
+                android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/btnExcluir"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginBottom="4dp"
-                android:layout_weight="1"
-                android:backgroundTint="#FF5722"
-                android:text="Excluir"
-                android:textAllCaps="false"
-                android:textSize="12sp" />
+                <Button
+                    android:id="@+id/btnVerMapa"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#4CAF50"
+                    android:text="Ver Mapa"
+                    android:textAllCaps="false"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btnEditar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_weight="1"
+                    android:text="Editar"
+                    android:textAllCaps="false"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btnExcluir"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FF5722"
+                    android:text="Excluir"
+                    android:textAllCaps="false"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
 
         </LinearLayout>
-
-    </LinearLayout>
 
 </androidx.cardview.widget.CardView>
